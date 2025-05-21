@@ -1,0 +1,157 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .header {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: var(--primary-color);
+        border-radius: 3px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 8px; }
+    .hamburger span:nth-child(3) { top: 16px; }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    /* Mobile Navigation Menu */
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: white;
+        flex-direction: column;
+        padding: 2rem;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        opacity: 1;
+        animation: none;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Adjust other elements for mobile */
+    .header-logo {
+        height: 45px;
+        width: 45px;
+    }
+
+    .main-logo {
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Contact Form Adjustments */
+    .contact-form {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .form-group label {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download-buttons a {
+        width: auto;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-btn {
+        width: 190px;
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: none;
+        background: var(--primary-color);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+} 
