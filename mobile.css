@@ -154,4 +154,23 @@
         cursor: pointer;
         text-align: center;
     }
+
+    .donation-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .donation-buttons a {
+        flex: 1 1 0;
+        display: flex;
+    }
+    .donation-buttons .donate-btn {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        padding: 12px 0;
+        border-radius: 8px;
+    }
 } 
