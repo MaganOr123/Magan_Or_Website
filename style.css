@@ -86,6 +86,10 @@ body {
     animation: fadeInDown 0.8s ease-out;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
