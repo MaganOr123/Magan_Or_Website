@@ -61,6 +61,14 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 html {
     scroll-padding-top: 80px; /* מרחק מההדר בזמן גלילה */
 }
@@ -84,10 +92,6 @@ body {
     top: 0;
     z-index: 1000;
     animation: fadeInDown 0.8s ease-out;
-}
-
-a {
-    text-decoration: none;
 }
 
 .nav-menu {
@@ -794,4 +798,39 @@ h3 {
 .lang-buttons button:hover,
 .lang-buttons a button:hover {
     background-color: #2980b9;
+}
+
+.google-form-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 95%;
+}
+
+.google-form-container iframe {
+    background: white;
+    transition: all 0.3s ease;
+    height: 800px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.google-form-container iframe:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .google-form-container {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .google-form-container iframe {
+        height: 700px;
+    }
 }
