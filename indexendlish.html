@@ -98,9 +98,9 @@
             <p class="download-text">Available on all platforms - get Magan Or now</p>
             <img src="media/dawonlod.png" alt="download" class="donation-image" srcset="">
             <div class="download-buttons">
-                <button class="download-btn">Download for Linux</button>
+                <button class="download-btn" onclick="showComingSoonModal()">Download for Linux</button>
                 <a href="Files/ContentFilterUtility.exe" download><button class="download-btn">Download for Windows</button></a>
-                <button class="download-btn">Download for macOS</button>
+                <button class="download-btn" onclick="showComingSoonModal()">Download for macOS</button>
             </div>
             <p class="coming-soon">Android and iOS support coming soon</p>
         </section>
@@ -148,5 +148,12 @@
         </section>
     </main>
     <script src="script.js" defer></script>
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeComingSoonModal()">&times;</span>
+        <p>The download for this system will be available soon!</p>
+      </div>
+    </div>
 </body>
 </html>

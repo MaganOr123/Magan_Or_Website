@@ -98,9 +98,9 @@
             <p class="download-text">זמין בכל הפלטפורמות - קבלו את Magan Or עכשיו</p>
             <img src="media/dawonlod.png" alt="download" class="donation-image" srcset="">
             <div class="download-buttons">
-                <a href=""><button class="download-btn">הורדה עבור לינוקס</button></a>
+                <button class="download-btn" onclick="showComingSoonModal()">הורדה עבור לינוקס</button>
                 <a href="Files/ContentFilterUtility.exe" download><button class="download-btn">הורדה עבור ווינדאוס</button></a>
-                <a href=""><button class="download-btn">הורדה עבור macOS</button></a>
+                <button class="download-btn" onclick="showComingSoonModal()">הורדה עבור macOS</button>
             </div>
             <p class="coming-soon">תמיכה באנדרואיד וIOS תגיע בקרוב</p>
         </section>
@@ -148,5 +148,12 @@
         </section>
     </main>
     <script src="script.js" defer></script>
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeComingSoonModal()">&times;</span>
+        <p>ההורדה עבור מערכת זו תהיה זמינה בקרוב!</p>
+      </div>
+    </div>
 </body>
 </html>

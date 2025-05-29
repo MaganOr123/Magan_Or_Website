@@ -21,4 +21,21 @@ document.addEventListener('click', (e) => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     }
-}); 
+});
+
+// Modal for coming soon
+function showComingSoonModal() {
+    document.getElementById('comingSoonModal').style.display = 'block';
+}
+
+function closeComingSoonModal() {
+    document.getElementById('comingSoonModal').style.display = 'none';
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+    var modal = document.getElementById('comingSoonModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+} 
